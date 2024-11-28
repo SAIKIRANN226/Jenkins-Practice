@@ -1,5 +1,9 @@
 pipeline {
-    agent any
+    agent {
+        node {
+            label 'saikiran-node'  // Provide the same name what you have created in the jenkins
+        }
+    }
 
     stages {
         stage('Developing') {
