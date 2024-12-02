@@ -25,13 +25,19 @@ pipeline {
 
     stages {
         stage('Build') {
-            echo 'Building the code..'
+            steps {
+                echo 'Building the code..'
+            }
         }
         stage('Test') {
-            echo 'Testing the code'
+            steps {
+                echo 'Testing the code..'
+            }
         }
         stage('Deploy') {
-            echo 'Deploying...'
+           steps {
+                echo 'Deploying the code..'
+            }
         }
         stage('Params') {
             steps {
