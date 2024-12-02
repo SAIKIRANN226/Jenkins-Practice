@@ -1,7 +1,7 @@
 pipeline {
     agent any
         node {
-            label 'saikiran-node'  // Provide the same name what you have created in the jenkins server
+            label 'saikiran-node'  // Provide the same name what you have created in the jenkins servers
         }
     }
 
