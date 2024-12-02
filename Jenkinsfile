@@ -1,24 +1,24 @@
 pipeline {
     agent {
         node {
-            label 'saikiran-node'  // Provide the same name what you have created in the jenkins servers
+            label 'saikiran-agent'
         }
     }
-
     stages {
-        stage('Developing') {
+        stage('Build') {
             steps {
-                echo 'Developing....'
+                echo 'Building....'
             }
         }
         stage('Testing') {
             steps {
-                echo 'Testing....'
+                echo 'Testing...'
             }
         }
         stage('Deploy') {
             steps {
-                echo 'Deploying....'
+                echo 'Deploying...'
             }
         }
+    }
 }
