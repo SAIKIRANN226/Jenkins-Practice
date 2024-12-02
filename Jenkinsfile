@@ -1,7 +1,7 @@
 pipeline {
     agent {
         node {
-            label 'saikiran-agent'
+            label 'saikiran-node'
         }
     }
     stages {
